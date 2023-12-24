@@ -83,7 +83,7 @@ WSGI_APPLICATION = "djanapp.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
+        'ENGINE': 'django.db.backends.sqlite3',
         "NAME": os.environ.get("DB_NAME"),
         "USER": os.environ.get("DB_USER"),
         'HOST': os.environ.get("DB_HOST"),
